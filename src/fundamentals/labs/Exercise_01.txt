@@ -2,17 +2,80 @@ Fundamentals Exercise 1: CLI
      Perform the following tasks using the CLI and copy and paste the commands and results below
 
      1. Navigate to CodingNomads folder (or the space you have create for this project)
+    Ashleys-MacBook-Pro:~ ashleyalmeida$ cd desktop
+    Ashleys-MacBook-Pro:desktop ashleyalmeida$ ls -al
+    Ashleys-MacBook-Pro:desktop ashleyalmeida$ cd CodingNomadsOnlineLabs/
+    Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ pwd
+    /Users/ashleyalmeida/desktop/CodingNomadsOnlineLabs
+
      2. Create new folder Terminal_testing
+    Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ mkdir Terminal_testing
+
      3. Inside of folder Terminal_testing,
          a. create 3 new .txt files all with different names
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ touch terminal_file_alpha
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ touch terminal_file_bet
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ touch terminal_file_charlie
+
          b. print the directory path
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ pwd
+            /Users/ashleyalmeida/desktop/CodingNomadsOnlineLabs/Terminal_testing
+
          c. list the contents of the folder
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ ls -al
+            total 0
+            drwxr-xr-x  5 ashleyalmeida  staff  160 May  8 13:33 .
+            drwxr-xr-x  5 ashleyalmeida  staff  160 May  8 13:29 ..
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:31 terminal_file_alpha
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:31 terminal_file_beta
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:33 terminal_file_charlie
+
+
      5. Inside of folder Terminal_testing, create a new folder
+            drwxr-xr-x  2 ashleyalmeida  staff    64 May  8 13:36 Testing
+
      6. Copy a file from Terminal_testing to the new folder
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ cp terminal_file_alpha Testing
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ cd Testing
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$ ls -al
+            total 0
+            drwxr-xr-x  3 ashleyalmeida  staff   96 May  8 13:39 .
+            drwxr-xr-x  7 ashleyalmeida  staff  224 May  8 13:37 ..
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:39 terminal_file_alpha
+
      7. Move a different file from Terminal testing to the new folder
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ cp terminal_file_beta Testing
+            Ashleys-MacBook-Pro:Terminal_testing ashleyalmeida$ cd Testing
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$ ls -al
+            total 0
+            drwxr-xr-x  4 ashleyalmeida  staff  128 May  8 13:44 .
+            drwxr-xr-x  7 ashleyalmeida  staff  224 May  8 13:37 ..
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:39 terminal_file_alpha
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:44 terminal_file_beta
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$
+
+
      8. Demonstrate removing:
          a. A file
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$ rm terminal_file_beta
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$ ls -al
+            total 0
+            drwxr-xr-x  3 ashleyalmeida  staff   96 May  8 13:45 .
+            drwxr-xr-x  7 ashleyalmeida  staff  224 May  8 13:37 ..
+            -rw-r--r--  1 ashleyalmeida  staff    0 May  8 13:39 terminal_file_alpha
+            Ashleys-MacBook-Pro:Testing ashleyalmeida$
+
          b. A folder
+            Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ rm -R Terminal_testing/
+            Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ ls -al
+            total 24
+            drwxr-xr-x   4 ashleyalmeida  staff    128 May  8 13:47 .
+            drwx------+ 10 ashleyalmeida  staff    320 May  8 10:20 ..
+            -rw-r--r--@  1 ashleyalmeida  staff  10244 May  8 13:40 .DS_Store
+            drwxr-xr-x   9 ashleyalmeida  staff    288 May  8 09:26 online_java_labs
+            Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$
+
+
      9. CHALLENGE:
          a. Use $ vim to write some text inside a file
          b. Use $ cat print contents of file
