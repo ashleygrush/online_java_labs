@@ -2,37 +2,83 @@ Answer the following questions:
 
 1.) Using the command line, how do you:
     a. change directories?
+        cd <path>
     b. list the contents of a folder?
+        ls -al
+        // ls meaning list, -al lists all information about directory, even hidden ones
     c. print the path of the current directory?
+        pwd
+        // meaning print working directory, shows where you are
     d. move a file from one location to the another?
+        mv <file name> <sub-dir>/<file name>
+        // sub-directory being where you want to move the file. Can also be used to rename a file.
     e. copy a file from one location to another?
+        cp <file name> <directory>
+        // copies file to location <directory>
     f. create a file?
+        touch <file name>
+        // to create in a file, place in <sub-directory>/<filename>
     g. create a folder?
+        mkdir <new-folder>
+        // mkdir meaning make directory(folder).
     h. delete a file?
+        rm <file name>
+        // CANNOT BE UNDONE!
     i. delete a folder?
+        rm -r <folder name>
+        // -r removes folders and directories. CANNONT BE UNDONE!
     j. print the contents of a file?
+        cat <file>
     k. edit the contents of a file?
+        chmod <file>
+        // changes and modifies permissions the file
 
 2.) Why do we use git and Github?
+    Easy to use, fast, free and can handle projects no matter how large or small.
+    It creates multiple branches so that many other users can contribute and edit.
 
 3.) What is the general flow of git?
+    Master Branch (finalized code)
+    > develop branch (code to finalaize before pushing to master branch)
+    > feature branches (Everyone's contributions and edits)
 
 4.) What is the purpose of adding a remote to a local git repository?
+    It's to upload files from local machine to the server (github in this case).
 
-5.) How do you print a message to the console?
+** 5.) How do you print a message to the console?
+    println (print line)
+    // displays anything within the parentheses
+
+    ** Is this the correct answer?
 
 6.) Where does a program begin its execution?
+    main()
+    // calls the method
 
 7.) What is a code block and how do you create one?
+    It's a grouping of two or more statements.
+    It's created by enclosing the two statements between two curly braces.
 
-8.) What is the idea of variable scope?
+** 8.) What is the idea of variable scope?
+    When a variable is declared within a scope, it's localizing that variable.
+    This gives a life span to the variable; declared when entered and destroyed once exited.
+
+    ** Is this correct?
 
 9.) What are semicolons used for?
+    Ends the statement in Java.
 
 10.) What are lines of code indented? When should a line be indented?
+    Lines of code are indented typically to make programs more legible.
+    After each open/close curly brace to keep the code visibly togethe.
 
-11.) What does a .java file need to be complied to a .class file before running?
 
+** 11.) What does a .java file need to be complied to a .class file before running?
+
+   Main class name; the name of the source file must match the name of the .class file.
+   To run, the file always needs main()
+
+   ** Is this correct?
 
 
 
