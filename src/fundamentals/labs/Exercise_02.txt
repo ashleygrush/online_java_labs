@@ -1,18 +1,59 @@
 1) Complete git tutorial here: https://try.github.io/
 
 2) Create Github account if you have not already done so.
+        https://github.com/ashleygrush
 
 3) Once complete practice the following on your own machine:
 
 Initializing git folder
     1. In CodingNomads folder, create new folder git_practice
+            Ashleys-MacBook-Pro:desktop ashleyalmeida$ cd CodingNomadsOnlineLabs/
+            Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ mkdir git_practice
     2. Inside git_practice:
         a. Initialize folder as a git folder (make sure you are in the correct folder when initializing)
+            Ashleys-MacBook-Pro:CodingNomadsOnlineLabs ashleyalmeida$ git init git_practice
+            Initialized empty Git repository in /Users/ashleyalmeida/Desktop/CodingNomadsOnlineLabs/git_practice/.git/
         b. Make new file
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ touch file_practice
+
         c. Add file
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ git add file_practice
+
         d. Commit file
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ git commit file_practice
+            Aborting commit due to empty commit message.
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ git commit -m "commiting file_practice"
+            [master (root-commit) 118729d] commiting file_practice
+             Committer: Ashley Almeida <ashleyalmeida@Ashleys-MacBook-Pro.local>
+            Your name and email address were configured automatically based
+            on your username and hostname. Please check that they are accurate.
+            You can suppress this message by setting them explicitly. Run the
+            following command and follow the instructions in your editor to edit
+            your configuration file:
+
+                git config --global --edit
+
+            After doing this, you may fix the identity used for this commit with:
+
+                git commit --amend --reset-author
+
+             1 file changed, 0 insertions(+), 0 deletions(-)
+             create mode 100644 file_practice
+
         c. On Github, create new git_practice repository
+            https://github.com/ashleygrush/git_practice.git
+
         d. Push commit file to Github
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ git remote add ashley_git_practice https://github.com/ashleygrush/git_practice.git
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$ git push ashley_git_practice master
+            Counting objects: 3, done.
+            Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+            Total 3 (delta 0), reused 0 (delta 0)
+            To https://github.com/ashleygrush/git_practice.git
+             * [new branch]      master -> master
+            Ashleys-MacBook-Pro:git_practice ashleyalmeida$
+
+
         e. Practice the following git flow until you feel comfortable:
             i.   Create or modify file
             ii.  Add file(s)
@@ -21,12 +62,79 @@ Initializing git folder
 
 Adding a remote
     1. Create new personal repository on Github named "online_java-labs".
-    2. On local machine, add the new remote address (directions are provided on Github with new repo is created)
+        https://github.com/ashleygrush/online_java-labs.git
+
+*** 2. On local machine, add the new remote address (directions are provided on Github with new repo is created)
+        Last login: Tue May  8 13:26:43 on ttys000
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ ech "# online_java-labs" >> README.md
+        -bash: ech: command not found
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ echo "https://github.com/ashleygrush/online_java-labs.git" >> README.md
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git init
+        Initialized empty Git repository in /Users/ashleyalmeida/.git/
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git add README.md
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git commit -m "first commit"
+        [master (root-commit) 1031a9b] first commit
+         Committer: Ashley Almeida <ashleyalmeida@Ashleys-MacBook-Pro.local>
+        Your name and email address were configured automatically based
+        on your username and hostname. Please check that they are accurate.
+        You can suppress this message by setting them explicitly. Run the
+        following command and follow the instructions in your editor to edit
+        your configuration file:
+
+            git config --global --edit
+
+        After doing this, you may fix the identity used for this commit with:
+
+            git commit --amend --reset-author
+
+         1 file changed, 1 insertion(+)
+         create mode 100644 README.md
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git remote add origin https://github.com/ashleygrush/online_java-labs.git
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git push -u origin master
+        Counting objects: 3, done.
+        Delta compression using up to 8 threads.
+        Compressing objects: 100% (2/2), done.
+        Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To https://github.com/ashleygrush/online_java-labs.git
+         * [new branch]      master -> master
+        Branch 'master' set up to track remote branch 'master' from 'origin'.
+        Ashleys-MacBook-Pro:~ ashleyalmeida$
+
+*** Was this done correctly?? or just need:
+        git remote add origin https://github.com/ashleygrush/online_java-labs.git
+
     3. Push local git repository to your Github using the new remote.
+        Ashleys-MacBook-Pro:~ ashleyalmeida$ git push -u https://github.com/ashleygrush/online_java-labs.git
+        Branch 'master' set up to track remote branch 'master' from 'https://github.com/ashleygrush/online_java-labs.git'.
+        Everything up-to-date
+        Ashleys-MacBook-Pro:~ ashleyalmeida$
+
 
 Cloning repository from Github
     1. Find a repository on Github
+        https://github.com/megamit/repository.git
+
     2. Clone repository to local machine
+        Ashleys-MacBook-Pro:cloning_generic_file_repo ashleyalmeida$ git clone https://github.com/megamit/repository.git
+        Cloning into 'repository'...
+        remote: Counting objects: 419, done.
+        remote: Total 419 (delta 0), reused 0 (delta 0), pack-reused 419
+        Receiving objects: 100% (419/419), 6.42 MiB | 4.90 MiB/s, done.
+        Resolving deltas: 100% (114/114), done.
+
     3. Create new repository on Github
+        https://github.com/ashleygrush/cloning_repo_practice.git
+
     4. Add new remote on local machine
+        Ashleys-MacBook-Pro:cloning_generic_file_repo ashleyalmeida$ git remote add cloning_repo_practice https://github.com/ashleygrush/cloning_repo_practice.git
+
     5. Push to new Github repository
+        Ashleys-MacBook-Pro:cloning_generic_file_repo ashleyalmeida$ git push cloning_repo_practice
+        Counting objects: 3, done.
+        Delta compression using up to 8 threads.
+        Compressing objects: 100% (2/2), done.
+        Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+        Total 3 (delta 0), reused 0 (delta 0)
+        To https://github.com/ashleygrush/cloning_repo_practice.git
+         * [new branch]      master -> master
