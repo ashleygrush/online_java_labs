@@ -45,11 +45,11 @@ Answer the following questions:
 4.) What is the purpose of adding a remote to a local git repository?
     It's to upload files from local machine to the server (github in this case).
 
-** 5.) How do you print a message to the console?
+*** 5.) How do you print a message to the console?
     println (print line)
     // displays anything within the parentheses
 
-    ** Is this the correct answer?
+*** Is this the correct answer?
 
 6.) Where does a program begin its execution?
     main()
@@ -73,12 +73,12 @@ Answer the following questions:
     After each open/close curly brace to keep the code visibly togethe.
 
 
-** 11.) What does a .java file need to be complied to a .class file before running?
+*** 11.) What does a .java file need to be complied to a .class file before running?
 
    Main class name; the name of the source file must match the name of the .class file.
    To run, the file always needs main()
 
-   ** Is this correct?
+*** Is this correct?
 
 
 
