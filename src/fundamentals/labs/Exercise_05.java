@@ -1,5 +1,6 @@
 package fundamentals.labs;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -24,6 +25,12 @@ public class Exercise_05 {
         int days = scanner.nextInt();
 
         // write completed code here
+        // x is the number of seconds in a day
+        int x = 1000;
+
+        // result
+        int result = (days * x);
+        System.out.println("There are " + result + " seconds in " + days + " number of days.");
 
     }
 }
