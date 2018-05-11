@@ -2,34 +2,70 @@ Answer the following questions:
 
 
 1.) What are the names and uses of Java's eight primitive types?
+    boolean
+    char
+    byte
+    short
+    long
+    int
+    float
+    double
 
 2.) How do you declare and initialize an int variable called "x" with the value 42.
+    int x = 42
 
 3.) What happens if you initialize a double variable with the value of a int?
+    It would lose the decimal value since int's can only be whole numbers.
 
-4.) How do you set an int variable to the value of a double?
+*** 4.) How do you set an int variable to the value of a double?
+    int x = 2
+    double x = 2.0
+
+    *** correct form since an int will fit into a double; doesn't require a casting?
 
 5.) What are the 5 arithmetic operators?
+    + addition
+    - subtraction
+    / division
+    * multiplication
+    % modulus (finds the remainder of a division equation)
 
 6.) What are Relational operators used for? What is the result of using a relational operator?
+    They're used as greater than, less than, not equal too, used to compare number values.
+    The result evaluates to a boolean value.
 
 7.) Demonstrate the use of a Relational operator.
+    int x = 4;
+    if (x => 3);
+        System.out.println( "x is " + x +);
 
 8.) What logical operators used for? What is the result of using a logical operator?
+    Logical operators evaluate two booleans. Results are either and, or or not.
 
 9.) Demonstrate the use of a logical operator.
+    int y = 2, 4;
+    if (y = 2 & 4);
+        System.out.println( "Y is 2 and 4.")
 
 10.) How can you use the shorthand addition operator to add 10 to a variable "x"?
+    x += 10;
 
 11.) What data type is a String?
+    an Object type.
 
 12.) Are string mutable?
+    No, they cannot be changed once created.
 
 13.) How do you concatenate Strings?
+    using +
+    String firstName = Ashley;
+    String lastName = Grush;
 
 14.) Can you cast and int to a String or a String to an int? Why or why not?
+    You can if you use a conversion; a string is typically just characters.
 
 15.) What is an array?
+
 
 16.) What is the first index of an array?
 
