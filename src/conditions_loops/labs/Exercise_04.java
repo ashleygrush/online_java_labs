@@ -7,5 +7,14 @@ package conditions_loops.labs;
  *
  */
 
+// How do I get it to count just even numbers???
+
 public class Exercise_04 {
+
+    public static void main(String[] args) {
+        for (int count = 0; count < 100; count = count + 1) {
+            System.out.println("This is count: " + count);
+        }
+    }
+
 }
