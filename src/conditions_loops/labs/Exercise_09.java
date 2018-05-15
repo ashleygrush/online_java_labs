@@ -8,4 +8,19 @@ package conditions_loops.labs;
  */
 
 public class Exercise_09 {
+
+    public static void main(String[] args) {
+
+        int a = 1;
+        while (a <= 10){
+            System.out.println("a is " + a);
+        if (a == 5){
+        break;
+        }
+        a++;
+        }
+        System.out.println("Break stopped at 5.");
+    }
+
+
 }
