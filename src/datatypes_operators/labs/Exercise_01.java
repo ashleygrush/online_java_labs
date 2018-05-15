@@ -22,7 +22,10 @@ public class Exercise_01 {
         float c = (float) 2.4;
         char x = 'x';
 
-        System.out.println("results are "+ a + b + c + x);
+        System.out.println("value of int a is " +a);
+        System.out.println("value of double b is " +b);
+        System.out.println("value of float c is " +c);
+        System.out.println("value of char x is " +x);
 
     }
 }
