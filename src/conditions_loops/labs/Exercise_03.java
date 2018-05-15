@@ -10,8 +10,6 @@ import java.util.Scanner;
  *
  */
 
-// How do I put in other for any other keys entered when a case is for finite statements??
-
 public class Exercise_03 {
 
 public static void main(String[] args) {
@@ -61,6 +59,9 @@ public static void main(String[] args) {
         case 12:
             System.out.println("December");
             break;
+
+            default:
+            System.out.println("Other");
         }
 
     }
