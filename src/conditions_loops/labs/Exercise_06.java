@@ -7,5 +7,20 @@ package conditions_loops.labs;
  *
  */
 
+// HELP!
+
 public class Exercise_06 {
+
+   public static void main(String[] args){
+
+           int limit = 100;
+           int sum = 0;
+           int i = 1;
+
+           while (i <= limit) {
+               sum += i++;
+           }
+           System.out.println("sum = " + sum);
+       }
+
 }
