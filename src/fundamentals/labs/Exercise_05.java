@@ -26,7 +26,7 @@ public class Exercise_05 {
 
         // write completed code here
         // x is the number of seconds in a day
-        int x = 1000;
+        int x = 86400;
 
         // result
         int result = (days * x);
