@@ -19,7 +19,12 @@ Answer the following questions:
 
 *** 4.) How do you set an int variable to the value of a double?
     int x = 2
-    double x = 2.0
+    double x = 2.24
+    int y = 3.3
+
+    int y = (int) 3.3
+    int y = 3
+
 
     *** correct form since an int will fit into a double; doesn't require a casting?
 
