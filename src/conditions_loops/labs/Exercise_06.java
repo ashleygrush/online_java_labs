@@ -7,7 +7,6 @@ package conditions_loops.labs;
  *
  */
 
-// HELP!
 
 public class Exercise_06 {
 
@@ -18,7 +17,7 @@ public class Exercise_06 {
            int i = 1;
 
            while (i <= limit) {
-               sum += i++;
+               sum += sum + i;
            }
            System.out.println("sum = " + sum);
        }
