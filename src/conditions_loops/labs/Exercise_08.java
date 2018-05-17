@@ -17,7 +17,7 @@ public class Exercise_08 {
         do{
             System.out.println("x is: " + x );
 
-         // print out every 3rd number???
+         // print out every 3rd number.
             x -= 3;
 
         } while(x >= 1);
