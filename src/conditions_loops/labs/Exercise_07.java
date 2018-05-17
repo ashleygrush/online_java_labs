@@ -21,26 +21,50 @@ import java.util.Scanner;
 public class Exercise_07 {
     public static void main(String[] args) {
     // take a word from user and find first vowel.
-    // Scanner
-        Scanner word = new Scanner(System.in);
 
         //input from user
         System.out.println("type a word.");
 
-        //translate
+        // Scanner
+        Scanner scanner = new Scanner(System.in);
 
-      //  String vowels = 'a,e,i,o,u';
-     //   char v = vowels.
+        String word = scanner.next();
+        int length = word.length();
+        int count = 0;
+        char vowel = 0;
 
-     //   while(ch == 'a') {
-     //       System.out.println("The word is " + word);
-     //       System.out.println("the vowel is" + ch);
-     //       ch <=;
+        while(count < length) {
+            char c = word.charAt(count);
 
-     //   }
+            switch (c) {
+                case 'a':
+                    vowel = 'a';
+                    break;
+                case 'e':
+                    vowel = 'e';
+                    break;
+                case 'i':
+                    vowel = 'i';
+                    break;
+                case 'o':
+                    vowel = 'o';
+                    break;
+                case 'u':
+                    vowel = 'u';
+                    break;
+                default:
+                    vowel = 0;
 
+            }
 
+        }
+        if (vowel == 0){
+            System.out.println("No vowels present.");
+        }
+        else {
+            System.out.println("first vowel is " + vowel);
+        }
 
-
+        System.out.println("Word is " + word);
     }
 }
