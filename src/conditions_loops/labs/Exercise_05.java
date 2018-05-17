@@ -29,31 +29,20 @@ public class Exercise_05 {
         // translate user input
         int x = 0;
         int y = 0;
-        int sum;
-
-        x = in.nextInt();
-        y = in.nextInt();
-
-        sum = x + y;
-
- // Option 1
- /**
-        int z = x + y;
-        float average = z/2;
-
-        // compute the factorial of the numbers through 5
         int sum = 0;
-        for (int i = z; i <= 100; i++) sum += i;
+        int count = 0;
 
-*/
- // Option 2
- /**
-        for (sum; sum <= 100000 ; sum++) {
-            sum +=;
-            float av *= sum;
+        x = in.nextInt(); // upper bound
+        y = in.nextInt(); // lower bound
+
+        for( ; x <= y ; x++) {
+            sum = sum+x;
+            count++;
         }
-*/
-            System.out.println("The sum is " + sum);
-            System.out.println("The average is ..... FIX ME!!");
+
+        double average = sum/count;
+
+        System.out.println("The sum is " + sum);
+        System.out.println("The average is " + average);
     }
 }
