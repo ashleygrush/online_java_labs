@@ -2,44 +2,115 @@ Answer the following questions:
 
 
 1.) What is an instance variable?
+    they are variables decalred outside of methods and they exist as members of a class.
 
 2.) How do you create an object of a class Vehicle?
+    Automobile toyota = new Automobile();
 
 3.) What is a reference variable? How is it different from a primitive type?
+    Unlike their primitive counterparts, Objects do not have a simple binary value.
 
 4.) What does it mean to pass by reference?
+    the called functions' parameter will be the same as the callers' passed argument (identity - the variable itself).
 
 5.) What makes up a method signature?
+    access-modifier return-type method-name(param a, param b, ...){
+    }
 
-6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+*** 6.) Write a method signature for a method divide() that takes two ints as parameters and returns a double.
+    // method Divide
+
+    public static method Divide(int x, int y) {
+        int x = 10
+        int y = 2
+        }
+
+     // return as a double???
+        return;???
+
+
+*** Won't return because it must be within the same parameters or overloaded???
 
 7.) When does a method stop executing? How can you make it terminate?
+    a method stops executing when the curly brace is encountered or when a return statement is executed.
 
-8.) How do you return a String from a method?
+*** 8.) How do you return a String from a method?
+    return;??
 
 9.) What is the return type of a method that does not returns any value?
+    void; does not return a value.
 
 10.) When should a method be static?
+    It should be declared static when a variable or method should be used independently of any objects.
+    Static members can be set or accessed before the creation of any objects.
 
 11.) What is an example of a time you would make an instance variable static? final?
+    An instance variable static should be used when each instance of the class should get its own copy.
+    Final should be used to ensure that an object terminates cleanly (make sure an open file is closed).
 
 12.) When a method returns a value, what needs to be done with that value?
+    If a method has return type that is not null you must return a value of the specified type from the method.
 
 13.) What is method overloading?
+    Method overloading allows for the dynamic use of a method; ex:
+    create a method that adds one or more numbers together, you would want a user to be able to use that method if
+    with two ints, three ints, two doubles, etc
 
-14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+ 14.) Demonstrate method overloading by writing the method signature of two overloaded methods.
+    //method one - takes in two ints and returns the sum as an int
+    int addition(int a, int b){
+        return a + b
+    }
+    //method two - takes in three ints and returns the sum as an int
+    int addition(int a, int b, int c){
+        return a + b + c
+    }
+
 
 14.) What are constructors used for?
+    A constructor initializes an object when it is created; it's used to set initial values to an object when it is created.
 
 15.) If a class does not have a constructor, how does Java handle the creation of an object
+    All classes have constructors in Java; zero, null and false for numeric types and boolean for reference types.
 
 16.) What does a constructor that takes in two variable, make and model, for a class Vehicle look like?
+    // constructor for class Vehicle
+    Vehicle(int ma, int mo) {
+        make = ma;
+        model = Mo;
+        }
+
 
 17.) What is the "this" keyword used for?
+    is used to refer to the members of a class if local variables have the same name.
 
 18.) What are the keywords public, private, protected used for in a class declaration? A method declaration? Variable declaration?
+    public - any class, in any location can access or invoke that member.
+    private - only other members of the same class can access that member.
+    protected - only members within the same package can access that member, with the inclusion of  a subclass of that class, if it is in a different package.
+    default (no specific modifier) - only members of classes within the same package have access to that member.
+
 
 19.) What is constructor overloading?
+    Overloading constructors allows for a dynamic creation of objects.
 
-20.) Demonstrate constructor overloading with three overloaded constructors.
+*** 20.) Demonstrate constructor overloading with three overloaded constructors.
 
+class MyConstructor{
+    int x;
+
+        MyConstructor(){
+        x = 10;
+        }
+
+        MyConstructor(int param){
+        x = param;
+        }
+
+         MyConstructor(int 2){
+        x = 2
+        }
+    }
+
+
+*** Is this correct for a contstuctor?
