@@ -17,12 +17,12 @@ class Overload {
     }
 
     int ovlDemo(int a, int b) {
-        System.out.println("two parameters: " +a+ "" +b);
-        return a+b;
+        System.out.println("two parameters: " +a+ " and " +b);
+        return a + b;
     }
     double ovlDemo(double a, double b){
-        System.out.println("two double parameters: " +a+ "" +b);
-        return a+b;
+        System.out.println("two double parameters: " +a+ " and " +b);
+        return a + b;
     }
 }
 
