@@ -16,93 +16,74 @@ package objects_classes_methods.labs;
  *      Cars, animals, poker games, sports teams, trees, beers, people and so on.
  */
 
-
-// Class 1 - Coffee Controller
+// Class 1 - Coffee Control: Main
 // Needs to make two objects using second and third class.
+
+class CoffeeControl {
+    public static void main(String[] args) {
+
+        // construct coffee blend.
+        Coffee african = new Coffee(5, 2, 1);
+        Coffee italian = new Coffee(  2, 2, 2);
+        Coffee french = new Coffee(2, 3, 2);
+
+        Brew small = new Brew(8, 170,2, african);
+        Brew medium = new Brew( 12, 170, 4, italian);
+        Brew large = new Brew(16, 170, 6, french);
+
+
+
+        System.out.println("African Blend has a caffeine level of " + small.coffee.caffeine +
+                " shot(s) of espresso per " + small.coz + " oz. cup of coffee.");
+
+
+        System.out.println("Italian Blend has a caffeine level of " + medium.coffee.caffeine +
+                " shots of espresso per " + medium.coz + " oz. cup of coffee.");
+
+
+        System.out.println("French Blend has a caffeine level of " + large.coffee.caffeine +
+                " shots of espresso per " + large.coz + " oz. cup of coffee.");
+
+    }
+
+}
+
+
+// Class 2 - Coffee blends
+// needs three instance variables using the constructor
 class Coffee {
 
         int region; //region of coffee (1-7)
         int roast; // light (1), medium (2) or dark (3)
-        int caf; // decaf (1) or regular (2)
+        int caffeine; // decaf (1) or regular (2)
 
 // constructor for coffee.
-    Coffee (int region, int roast, int caf) {
+    Coffee (int region, int roast, int caffeine) {
         this.region = region;
         this.roast = roast;
-        this.caf = caf;
+        this.caffeine = caffeine;
     }
-// return, which roast is strongest?
-        int range () { return roast + caf;}
-
-
-// Which region has the strongest coffee?
-        int strongest = region + range();
 
 }
 
 
-// Class 2 - Dark coffee blends.
+
+// Class 3 - Coffee brewing process
 // needs three instance variables using the constructor
-class DarkCoffee {
-    public static void main(String[] args) {
+class Brew {
 
-    // construct coffee blend.
-    Coffee african = new Coffee(5, 2, 2);
-    Coffee italian = new Coffee(  2, 2, 2);
-    Coffee french = new Coffee(2, 3, 2);
+        int water; // oz water needed
+        int heat; // boiling temp (usually 160-175 degrees)
+        int coz; // oz of coffee needed
+        Coffee coffee;
 
-    int level;
-    int scale = 10;
-
-    level = african.strongest - scale;
-
-    System.out.println("African Blend has a caffeine level of " + level +
-                " on a scale of "+ scale);
-
-    level = italian.strongest = scale;
-
-    System.out.println("Italian Blend has a caffeine level of " + level +
-                " on a scale of " + scale);
-
-    level = french.strongest = scale;
-
-    System.out.println("French Blend has a caffeine level of " + level +
-                " on a scale of " + scale);
-
+// constructor for brewing coffee.
+    Brew (int water, int heat, int coz, Coffee coffee) {
+        this.water = water;
+        this.heat = heat;
+        this.coz = coz;
+        this.coffee = coffee;
     }
 
 }
 
-
-// Class 3 - Light coffee blends.
-// needs three instance variables using the constructor
-class LightCoffee {
-    public static void main(String[] args) {
-
-     // construct
-     Coffee kona = new Coffee(1,1,2 );
-     Coffee brazillian = new Coffee(2,2,2);
-     Coffee guatamala = new Coffee(4, 1, 1);
-
-     int level;
-     int scale = 10;
-
-     level = kona.strongest - scale;
-
-     System.out.println("Kona Blend has a caffeine level of " + level +
-                " on a scale of " + scale);
-
-     level = brazillian.strongest = scale;
-
-     System.out.println("Brazilian Blend has a caffeine level of " + level +
-                " on a scale of " + scale);
-
-     level = guatamala.strongest = scale;
-
-     System.out.println("Guatamala Blend has a caffeine level of " + level +
-                " on a scale of " + scale);
-
-    }
-
-
-}
