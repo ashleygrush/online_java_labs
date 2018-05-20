@@ -12,3 +12,35 @@ package objects_classes_methods.labs;
  */
 
 
+// Static to Static
+
+
+class MethodCall{
+
+// Static to non-static
+
+    public static void main(String[] args){
+        MethodCall obj = new MethodCall(); // create an object of class MethodCall
+        obj.methodB(); // call methodB on the object obj
+
+        int x = Math.subtractExact(4,2); // Math is always static, doesn't need to be an object.
+
+
+    }
+
+
+    public void methodB(){
+        System.out.println("Inside methodB");
+        methodD();
+
+    }
+    public void methodD(){
+        System.out.println("inside method D, outside method B.");
+
+
+    }
+
+
+}
+
+
