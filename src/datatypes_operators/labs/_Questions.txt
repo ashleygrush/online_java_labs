@@ -70,17 +70,27 @@ Answer the following questions:
     You can if you use a conversion; a string is typically just characters.
 
 15.) What is an array?
-
+    a collection of variables of the same type, referred to by a common name
 
 16.) What is the first index of an array?
+    0
 
 17.) Can you change the size of an array once it has been declared and initialized?
+    No, you must recreate the array to resize.
 
 18.) How do you print the 5th element in an array "exampleArray"?
+    exampleArray = [4]
 
 19.) What are the two ways you can declare and initialize an array? Demonstrate both.
+    type array-name [ ] = new type[size];
+        or
+    type [ ] = var-name;
 
 20.) How do you iterate through a multidimensional array?
+    In order to access elements in a Multi-Dimensional array, we must specify each index.
+    Using an example array tables populated with the following values,
+    we can access each element using the right and left index.=
+
 
 21.) What is the for-each loop used for?
-
+    it cycles through a collection of objects in a strictly sequential fashion, from start to finish.
