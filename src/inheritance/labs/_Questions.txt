@@ -1,20 +1,31 @@
 Answer the following questions:
 
 1.) What is inheritance?
+    It's when a subclass inherits all the fields and methods from a superclass.
 
 2.) Why do we use inheritance?
+    the concept is easy to use and yet the results are incredibly powerful and stable.
+    When a class is able to be inherited, code can be reused in many places without having to worry about functional issues.
 
 3.) Provide a real world example where you think inheritance would be implemented.
+    A "how to" application for starting a computer v. starting a tablet or cell phone.
+    the first method would have the start up sequence and would cascade to the new sub classes.
 
 4.) How does a class inherit another class?
+    a subclass adds (extend) a superclass when it’s declared.
 
 5.) How many levels can a hierarchy extend?
+    There's no limit, but it can get messy after 10 or so.
 
 6.) What is the "super" keyword used for?
+    If the parent class has a custom constructor, you must manually invoked the parent constructor inside the child constructor.
+    Super is used to call the parent class's custom constructor.
 
 7.) When a subclass object is created, in what order do the constructors execute?
+    From the super
 
 8.) What is method overwriting?
+    method overwriting overrides a method in a parent class.
 
 9.) How can method overwriting be beneficial?
-
+    It can keep the original method intact, while making a new method for a subclass that may need a different method.
