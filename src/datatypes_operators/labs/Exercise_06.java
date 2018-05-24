@@ -20,16 +20,20 @@ package datatypes_operators.labs;
 class Exercise_06 {
 
     public static void main(String[] args) {
-// create array (twoDArray)
+        // create array (twoDArray)
         int[][] twoDArray = new int[5][5];
+
+        int count = 3;
+
 
         for (int i = 0; i < twoDArray.length; i++) {
             for (int j = 0; j < twoDArray[i].length; j++) {
-// array formula
-                twoDArray[i][j] = i * (i*3);
+                // array formula
+                twoDArray[i][j] = count;
+                count += 3;
             }
         }
-// print to screen
+        // print to screen
         for (int i = 0; i < twoDArray.length; i++) {
             for (int j = 0; j < twoDArray[i].length; j++) {
                 System.out.print(twoDArray[i][j] + "  ");
