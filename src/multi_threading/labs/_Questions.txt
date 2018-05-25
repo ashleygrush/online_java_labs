@@ -1,11 +1,17 @@
 Answer the following questions:
 
 1.) What is a thread and why do we use them?
+    Multithreading is Multitasking. Great for doing background tasks that the Main Thread does not need to wait for.
 
 2.) What are the two ways to create a thread?
+    Implement the Runnable Interface
+    Extend the Thread class
 
 3.) How do you start a thread using the Runnable interface?
+    run()
 
 4.) How do you start a thread using the Thread class?
+    override the run() method in the Thread class.
 
 5.) How do you change a thread priority?
+    .setPriority(Thread.MAX_PRIORITY); MIN_PRIORITY or NORM_PRIORITY
