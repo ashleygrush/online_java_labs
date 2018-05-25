@@ -1,24 +1,39 @@
 Answer the following questions:
 
 1.) What is exception handling?
+    It's used to gracefully handle errors a program might encounter.
 
 2.) What is the exception hierarchy? What is the difference between the Exception class and the Error class?
+    When an exception occurs an object of the Throwable class is generated.
+    The two subclasses of Throwable are Error and Exception.
+    Exceptions of type Error are generally caused by the machine, thus we will not examine them.
+    Exceptions of type Exception are caused by program activity.
 
 3.) What is a try/catch?
+    A Try/Catch block is the foundation of all exception handling.
 
 4.) What exceptions have you come across thus far?
+    Invalid argument primarily.
 
 5.) How many catch statement can you have following a try?
+    Any amount of catch statements as long as they differ from one another.
 
 6.) How many try statements can you have preceding a catch?
+    One.
 
 7.) What does the finally statement do in a try/catch/finally block?
+     finally is used to specify a block of code that executes after a try/catch block no matter the result.
 
 8.) Can you nest exceptions? If so, when would you nest an exception?
+    Yes, when you want to try and solve the problem then and there.
 
 9.) If you want to catch an ArrayIndexOutOfBounds exception and an Exception exception,
     which should you catch first? Why?
+    You'd want to try and catch the Array out of bounds first to have the program built execute correctly.
 
 10.) How do you rethrow and exception? Why would you rethrow an exception?
+     Re-throwing an exception gives an outer catch statement the chance to handle the exception.
+     This could be if the problem was corrected in the catch statement and you want to try and re-run the program.
 
 11.) What is the purpose of the throws keyword?
+    It will be handled outside of the program and will throw it to the the place it was called.
