@@ -1,19 +1,28 @@
 Answer the following questions:
 
 1.) What is a byte stream?
+    Byte streams are used to read/write data byte by byte (8 bits at a time).
 
 2.) What is a character stream?
+    Character Streams are used to read/write data character by character (16 bits at a time).
 
 3.) What two classes are at the top of the the byte stream hierarchy?
+    InputStream and Outputstream
 
 4.) What two classes are at the top of the the character stream hierarchy?
+    Reader and Writer
 
 5.) List at least three byte stream classes.
+    FileInputStream, BufferInputStream, DataInputStream
 
 6.) List at least three character stream classes.
+    FileStreamReader, BufferReader, FileReader
 
 7.) What is a try-with-resources?
+    ???
 
 8.) What makes the BufferedReader different from the BufferedInputStream?
+    Buffered reader will wrap around buffered input and read it line by line, v. letter by letter.
 
 9.) When would you use the read() method vs. the readline() method?
+    When wanting to scan through a file v. line by line?
