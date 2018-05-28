@@ -19,7 +19,8 @@ Answer the following questions:
     FileStreamReader, BufferReader, FileReader
 
 7.) What is a try-with-resources?
-    ???
+    it prevents situations in which a file (or other resource) is
+    inadvertently not released after it is no longer needed.
 
 8.) What makes the BufferedReader different from the BufferedInputStream?
     Buffered reader will wrap around buffered input and read it line by line, v. letter by letter.
