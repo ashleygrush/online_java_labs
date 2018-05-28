@@ -1,5 +1,7 @@
 package input_output.labs;
 
+import java.io.*;
+
 /**
  * Input/Output Exercise 1: File encryption
  *
@@ -12,3 +14,36 @@ package input_output.labs;
  *
  */
 
+class FileEncryption {
+    public static void main(String[] args) throws IOException {
+
+        // declare input and output streams
+        BufferedReader inputStream = null;
+        PrintWriter outputStream = null;
+        char c;
+
+            // Open file and create destination file.
+            try {
+                inputStream = new BufferedReader(new FileReader("/Users/ashleyalmeida/desktop/FolderExample/file.txt"));
+                outputStream = new PrintWriter(new FileWriter("/Users/ashleyalmeida/desktop/FolderExample/file_encryption.txt"));
+
+                // Read file by character.
+                do {
+                    c = (char) inputStream.read();
+                    System.out.println(c);
+                } while (c != '.');
+            }
+
+            // encrypt file - change character.
+
+
+            // close connection
+            finally {
+                if (inputStream != null)
+                    inputStream.close();
+                if (outputStream != null)
+                    outputStream.close();
+                System.out.println("File closed.");
+            }
+        }
+    }
