@@ -8,3 +8,56 @@ package generics.labs;
  *          dynamic usage.
  */
 
+// generic class
+class Generic <T> {
+
+    // two instance variables
+    T t;
+
+    // constructor for obj
+    public Generic(T t) {
+        this.t = t;
+    }
+
+    // getter and setters
+    public T getT() {
+        return t;
+    }
+
+    public void setT(T t) {
+        this.t = t;
+    }
+
+    @Override
+    public String toString() {
+        return "Generic{" +
+                "t=" + t +
+                '}';
+    }
+}
+
+class GenericUsage {
+    public static void main(String[] args) {
+        Generic <Integer> intGen;
+
+        intGen = new Generic<Integer>(11);
+
+        intGen.toString();
+        int x = intGen.getT();
+
+
+        // print results
+        System.out.println("Generic T is an int value of " + x);
+        System.out.println();  // break
+
+        Generic<String> stringGeneric;
+
+        stringGeneric = new Generic<String>("Generic T is also a string.");
+
+        stringGeneric.toString();
+        String str = stringGeneric.getT();
+
+        System.out.println(str);
+    }
+}
+
